@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('/images/signup.avif');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        section {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            width: 50%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 0;
+            font-size: 36px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #ac5535;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #fff;
+            color: #ac5535;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>SIGN UP</h1><br>
+        <form method="post" action="/updatedList">
+            FULL NAME:<input type="text" placeholder="ENTER YOUR FULL NAME" name="full_name"/>
+            <br><br>
+            EMAIL : <input type="email" placeholder="ENTER YOUR EMAIL" name="email_id_1" />
+            <br><br>
+            PASSWORD: <input type="password" placeholder="PASSWORD MUST CONTAIN ONLY NUMERIC VALUES" name="pass_word"/>
+            <br><br>
+            RE-ENTER PASSWORD:<input type="password" placeholder="RE-ENTER PASSWORD" name="reenter"/>
+            <br><br>
+            <button type="submit">SUBMIT!</button>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('/images/signup.avif'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .login-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 24px; 
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px; 
+        }
+
+        button[type="submit"] {
+            background-color: rgb(172, 85, 53);
+            color: black;
+            border: none;
+            padding: 12px 0;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px; 
+        }
+
+        button[type="submit"]:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>LOGIN</h1>
+        <br>
+        
+        <form method="GET" action="/loginpage"> 
+            <input type="email" name="email" placeholder="Email"/>
+            <input type="password" name="password" placeholder="Password"/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
